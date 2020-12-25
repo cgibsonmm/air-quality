@@ -1,5 +1,10 @@
 class Api::V1::DevicesController < ApiController
 
+
+  def index 
+    render json: {"hello": "yes"}
+  end
+  
   def create
     @device = Device.new(new_device_params)
 
